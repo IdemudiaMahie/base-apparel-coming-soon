@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    /* ## Colors */
+
+        /* ### Primary */
+
+            --Desaturated-Red: hsl(0, 36%, 70%);
+            --Soft-Red: hsl(0, 93%, 68%);
+
+        /* ### Neutral */
+
+            --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+        /* ### Gradients */
+
+            --linearp: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+            --linearq: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+/* Modifiers ----------------------------*/
+
+/* .offscreen {
+    position: absolute;
+    left: -10000px;
+} */
+
+.pinkcolour {
+    color: var(--Desaturated-Red);
+}
+
+/* BLOCK & ELEMENTS ----------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: var(--linearp);
+    font-family: "Josefin Sans", sans-serif;
+    background-color: purple;
+    min-height: 100vh;
+    text-align: center;
+}
+
+article {
+    /* background-color: blue; */
+    min-height: calc(100vh - 11px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(1) figure img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+section:nth-child(2) figure img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+section:nth-child(3) {
+    background-image: linear-gradient(to right, var(--Dark-Grayish-Red), transparent);
+    display: none;
+}
+
+section:nth-child(4) {
+    background-color: red;
+    max-width: 50vw;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.attribution {
+    position: relative;
+    bottom: 0;
+}
+
+/* body {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2em;
+    word-spacing: 0.5em;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration-color: aqua;
+    text-decoration: underline overline wavy green 12px;
+    text-decoration: line-through underline overline;
+
+    googlefont
+} */
